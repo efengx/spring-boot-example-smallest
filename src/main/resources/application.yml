@@ -1,0 +1,38 @@
+server:
+  port: 9080
+
+management:
+  server:
+    port: 9081
+
+spring:
+  profiles:
+    active: db
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
+  jackson:
+    serialization:
+      indent_output: false
+
+# management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+
+logging:
+  level:
+    org.springframwork:
+      data: DEBUG
+      security: DEBUG
+
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 604800
