@@ -1,10 +1,16 @@
 # README.md #
+
+### Description ###
+Spring boot minimal project
+Spring boot best practice
+
+
 * Use the simplest structure
 
-### config ###
+### Config ###
 
 
-### file structure ###
+### File structure ###
 ```text
 |-- src
 |-- main
