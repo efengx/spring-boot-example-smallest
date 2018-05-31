@@ -25,11 +25,14 @@ Spring boot best practice
 
 
 ### rest api
-GET     - 
-POST    - 
-PUT     - 
-PATCH   - 
-DELETE  - 
+```text
+GET
+POST
+PUT
+PATCH
+DELETE
+```
+
 
 1, Maven 
 pom.xml
