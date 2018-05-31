@@ -41,7 +41,6 @@ RestController RequestMapping GetMapping PostMapping
 
 5, hibernate (*)
 ORM
-泛型
 CREATE DATABASE IF NOT EXISTS demo default charset utf8 COLLATE utf8_general_ci
 ddl-auto
 
@@ -51,7 +50,10 @@ ddl-auto
 
 
 ### git
+```text
 git clone https://github.com/efengx/spring-boot-example-smallest.git
+
 git add .
 git commit -m 'code commit'
 git push
+```
