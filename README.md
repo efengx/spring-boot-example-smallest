@@ -67,3 +67,8 @@ git checkout -b dev
 git commit -a -m 'code commit'
 git push
 ```
+
+- ssk
+```text
+ssh-keygen -t rsa
+```
