@@ -61,7 +61,20 @@ git commit -m 'code commit'
 git push
 ```
 
-###entity
+- branch
+```text
+git branch dev
+git checkout -b dev
+git commit -a -m 'code commit'
+git push
+```
+
+- ssk
+```text
+ssh-keygen -t rsa
+```
+
+### entity
 |——user
 |——menu
 |——role
@@ -69,5 +82,4 @@ user表和menu表是多对多的关系，表明一个人可以操作多个不同
 user表和role表是一对多的关系，表明一个人可以有多个角色
 不同角色有不同的操作菜单
 
-###manytomany
 既然是多对多的关系，那么应该主控方被控方的注释相同。
