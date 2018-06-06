@@ -60,6 +60,7 @@ git add .
 git commit -m 'code commit'
 git push
 ```
+
 - branch
 ```text
 git branch dev
@@ -72,3 +73,13 @@ git push
 ```text
 ssh-keygen -t rsa
 ```
+
+### entity
+|——user
+|——menu
+|——role
+user表和menu表是多对多的关系，表明一个人可以操作多个不同角色的菜单，一个菜单也可以给不同的人操作
+user表和role表是一对多的关系，表明一个人可以有多个角色
+不同角色有不同的操作菜单
+
+既然是多对多的关系，那么应该主控方被控方的注释相同。

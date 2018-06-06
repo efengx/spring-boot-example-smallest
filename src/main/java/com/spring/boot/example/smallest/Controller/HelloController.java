@@ -1,23 +1,27 @@
 package com.spring.boot.example.smallest.Controller;
 
-import com.spring.boot.example.smallest.Entity.UserEntity;
-import org.springframework.stereotype.Controller;
+
+import com.spring.boot.example.smallest.Entity.User;
+import com.spring.boot.example.smallest.Repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+
+@RestController
 @RequestMapping("/api")
-
 public class HelloController {
+    @Autowired UserRepository userRepository;
+
     @RequestMapping("/hello")
-    @ResponseBody
     public String sayHello(){
         return "hello";
     }
-    @RequestMapping("/user")
-    @ResponseBody
-  public String getUser(){
-        UserEntity user =new UserEntity(1,"张三",20,"武汉大学");
-        return user.getId()+user.getName()+user.getAge()+user.getSchool();
-    }
+
+   /* @RequestMapping("/user/{u_id}")
+    public User getUser(@PathVariable("u_id") Integer u_id){
+        return userRepository.findOne();
+    }*/
 }
